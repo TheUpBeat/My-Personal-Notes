@@ -1,11 +1,11 @@
 # Looking into VIM/NEOVIM and its craziness.
 
 * Move        
-        ^ 
-        k 
-    < h   l > 
-        j 
-        v 
+
+    - `k` -> moves up
+    - `h` -> moves left
+    - `l` -> moves right
+    - `j` -> moves down
     - `w` -> move to the next word (starting letter)
     - `numberw` -> `3w` (or) `10w` -> moves to the starting of the word after the specific number of words
     - `b` -> move to the previous word (starting letter)
@@ -28,7 +28,7 @@
     - `:q` - quit
     - `:q!` - quit forcefully
     - `Shift + Z + Q` -> quit without saving
-    
+
 
 * Write
     - `i` -> insert mode (lets you write before the character pointed)
@@ -44,7 +44,7 @@
     - `numberx` -> `4x` (or) `14x` -> deletes the specified number of characters from the cursors position
     - `dw` -> deletes the highlighted word (until the start of the word)
     - `dnumberw` -> `d5w` (or) `d18w` -> deletes the specified number of the words from the cursor position
-    - `db` -> deletes the previous to the highlighted word (until the start of the word) 
+    - `db` -> deletes the previous to the highlighted word (until the start of the word)
     - `dnumberb` -> `d4b` (or) `d11b` -> deletes the specified number of word backwards from the cursor position
     - `de` -> deletes the highlighted word (until the end of the word)
     - `dnumbere` -> `d4e` (or) `d15e` -> deletes the specified number of words from the cursors positions (until the end of the word)
@@ -113,4 +113,3 @@
     - `vfunction` -> `vap` -> can do all the functions same as `dap` (or) `cap`
     - `Shift + V` -> selects everything in the line
     - `Ctrl + v` -> lets you selects everything block sized
-
