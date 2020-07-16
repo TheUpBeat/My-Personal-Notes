@@ -1,4 +1,4 @@
-# Looking into VIM/NEOVIM and its craziness.
+# A small reference to VIM/NEOVIM commands.
 
 * Move        
 
