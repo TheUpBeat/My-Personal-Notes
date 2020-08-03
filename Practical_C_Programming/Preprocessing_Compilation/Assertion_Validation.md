@@ -67,6 +67,17 @@ int main() {
 
 * It cannot be used to check the errors at runtime. For example, if the user enters a wrong input assert cannot be used for handling these kind of errors. 
 
+* Most of the programmers avoid using `assert` as it terminates the program if an error occurred. 
+
+```
+For example, consider a program that implements a doubly-linked list. Such a list might be represented as a collection of nodes, each of which has pointers to its prececessor and successor. In such a program, one can reasonably expect that if p points to a node, and that node has a successor (i.e. it is not at the end of the list), then the successor will point back at the original node as its predecessor. One might incorporate that belief into one's program as
+
+    assert (p->succ == 0 || p->succ->pred == p);
+
+If this assert ever fails, it means that the data structure has become corrupted, and any attempt to use it further will have undefined consequences. It is true that the program might be able to continue in these circumstances, provided that it never tried to use the errant pointer, but if the program produces correct results after that, it does so only by coincidence.
+```
+[Source](https://web.archive.org/web/20090707025230/http://www.ddj.com/blog/cppblog/archives/2007/07/assertions_vers.html)
+
 ## With Pointers
 
 * Using assertions we can make sure that the pointer is pointing to a memory address instead to a NULL.
